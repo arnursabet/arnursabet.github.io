@@ -1016,6 +1016,7 @@ body {
   .academics {
     padding: 60px 20px;
     text-align: center;
+    box-shadow: none;
   }
   .academics h1 {
     font-size: 26px;
@@ -1026,12 +1027,14 @@ body {
   }
   .work-experience, .projects {
     padding: 60px 20px;
+    box-shadow: none;
   }
   .work-experience .work-content {
     text-align: center;
   }
   .projects {
     text-align: center;
+    box-shadow: none;
   }
   .academics-content > div:nth-child(1) > a:nth-child(1) {
     margin: 0 auto;
