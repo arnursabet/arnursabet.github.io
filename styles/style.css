@@ -880,6 +880,7 @@ body {
   .my-description {
     margin-top: 65px;
     font-size: 22px;
+    align-self: center;
   }
   .about-container {
     position: absolute;
@@ -935,6 +936,7 @@ body {
   }
   .my-description {
     margin-top: 35px;
+    align-self: center;
   }
   .academics-content div, .work-content div {
     -webkit-box-orient: vertical;
@@ -961,6 +963,7 @@ body {
   .my-description {
     margin-top: 35px;
     font-size: 16px;
+    align-self: center;
   }
   .side-bar {
     position: relative;
@@ -1063,6 +1066,7 @@ body {
   .my-description {
     margin-top: 35px;
     font-size: 16px;
+    align-self: center;
   }
   @keyframes appear {
     0% {
@@ -1088,6 +1092,7 @@ body {
   }
   .my-description {
     margin-top: 35px;
+    align-self: center;
   }
   .social {
     margin-top: 0px;
