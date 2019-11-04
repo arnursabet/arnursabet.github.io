@@ -737,9 +737,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .work-experience .work-content a img:hover {
@@ -817,8 +816,8 @@ body {
     height: 100vh;
     padding-right: 30px;
     padding-left: 30px;
-    -webkit-box-shadow: #000 5px 11px 14px;
-            box-shadow: #000 5px 11px 14px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   .right-side-wrapper {
     width: 100%;
@@ -851,8 +850,8 @@ body {
     position: relative;
     width: 100%;
     height: 100vh;
-    -webkit-box-shadow: #000 5px 11px 14px;
-            box-shadow: #000 5px 11px 14px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   .right-side-wrapper {
     width: 100%;
@@ -881,26 +880,85 @@ body {
   }
 }
 
-@media (max-width: 576px) {
-  .top-menu {
-    position: initial;
-    padding: 0px;
-  }
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (orientation: portrait) {
+  /* Styles */
   .my-name {
-    width: auto;
-    margin-top: 35px;
-    line-height: 36px;
+    margin-top: 75px;
+    font-size: 50px;
   }
-  .my-description {
-    margin-top: 35px;
-    font-size: 16px;
+  .my-name::after {
+    width: 350px;
   }
   .side-bar {
     position: relative;
     width: 100%;
     height: 100vh;
-    -webkit-box-shadow: #000 5px 11px 14px;
-    box-shadow: #000 5px 11px 14px;
+    padding-right: 30px;
+    padding-left: 30px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .right-side-wrapper {
+    width: 100%;
+    margin-left: 0%;
+    float: none;
+    clear: none;
+  }
+  .my-description {
+    margin-top: 65px;
+    font-size: 22px;
+  }
+  .about-container {
+    position: absolute;
+    bottom: calc((100vh - 498px)/2);
+    left: 10%;
+    width: 50%;
+  }
+  .contact-btn {
+    padding: 20px;
+    font-size: 18px;
+    width: 250px;
+  }
+  .academics-content > div:nth-child(1) {
+    display: inline-block;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles */
+  .my-name {
+    font-size: 30px;
+  }
+  .my-description {
+    margin-top: 35px;
+  }
+  .social {
+    margin-top: 0px;
+  }
+  .my-location {
+    margin-top: 37px;
+  }
+  .top-menu {
+    position: initial;
+    padding: 0px;
+  }
+  .side-bar {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    -webkit-box-shadow: none;
+    box-shadow: none;
     padding: 20px 20px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -913,9 +971,6 @@ body {
   .right-side-wrapper {
     width: 100%;
     margin-left: 0%;
-  }
-  .social {
-    margin-top: 45px;
   }
   .about-container {
     position: static;
@@ -983,7 +1038,9 @@ body {
   }
 }
 
-@media (max-width: 481px) {
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
   .about-container {
     position: initial;
     width: 90vw;
@@ -997,10 +1054,6 @@ body {
     margin-top: 35px;
     font-size: 16px;
   }
-  
-}
-
-@media (min-width: 320px) {
   .my-name {
     font-size: 30px;
   }
@@ -1012,6 +1065,277 @@ body {
   }
   .my-location {
     margin-top: 37px;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+  .about-container {
+    position: initial;
+    width: 90vw;
+    padding: 0px;
+    margin: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .my-description {
+    margin-top: 35px;
+    font-size: 16px;
+  }
+}
+
+/* iPhone 6+, 7+, 8+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+  .about-container {
+    position: initial;
+    width: 90vw;
+    padding: 0px;
+    margin: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .my-description {
+    margin-top: 35px;
+    font-size: 16px;
+  }
+  .top-menu {
+    position: initial;
+    padding: 0px;
+  }
+  .my-name {
+    width: auto;
+    margin-top: 35px;
+    line-height: 36px;
+  }
+  .side-bar {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 20px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .right-side-wrapper {
+    width: 100%;
+    margin-left: 0%;
+  }
+  .social {
+    margin-top: 45px;
+  }
+  .academics .academics-content .academic-info {
+    margin-left: 0px;
+  }
+  .academics-content div, .work-content div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 0px;
+  }
+  .work-experience .work-content .work-info {
+    margin-left: 0px;
+  }
+  .project-info > p {
+    line-height: 1.7;
+  }
+  .academics .academics-content .academic-info {
+    text-align: center;
+  }
+  .content-wrapper {
+    margin: 0px auto;
+  }
+  .academics {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .academics h1 {
+    font-size: 26px;
+  }
+  .prof-skills {
+    padding: 60px 20px;
+    margin: 0 auto;
+  }
+  .work-experience, .projects {
+    padding: 60px 20px;
+  }
+  .work-experience .work-content {
+    text-align: center;
+  }
+  .projects {
+    text-align: center;
+  }
+  .academics-content > div:nth-child(1) > a:nth-child(1) {
+    margin: 0 auto;
+  }
+  .academics-content > div:nth-child(2) > a:nth-child(1) {
+    margin: 0 auto;
+  }
+  .prof-skills > div:nth-child(1) > h1:nth-child(1),
+  .work-experience > div:nth-child(1) > h1:nth-child(1),
+  .projects > div:nth-child(1) > h1:nth-child(1) {
+    font-size: 26px;
+    text-align: center;
+  }
+  .work-experience .work-content > div:nth-child(1) {
+    display: initial;
+  }
+  .work-content > div:nth-child(2) {
+    margin-top: 50px;
+  }
+}
+
+/* iPhone X ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+  .about-container {
+    position: initial;
+    width: 90vw;
+    padding: 0px;
+    margin: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .my-description {
+    margin-top: 35px;
+    font-size: 16px;
+  }
+}
+
+/* iPhone XS Max, XR ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+  .about-container {
+    position: initial;
+    width: 90vw;
+    padding: 0px;
+    margin: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .my-description {
+    margin-top: 35px;
+    font-size: 16px;
+  }
+  .top-menu {
+    position: initial;
+    padding: 0px;
+  }
+  .side-bar {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 20px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .right-side-wrapper {
+    width: 100%;
+    margin-left: 0%;
+  }
+  .about-container {
+    position: static;
+    width: 100%;
+  }
+  .academics .academics-content .academic-info {
+    margin-left: 0px;
+  }
+  .academics-content div, .work-content div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 0px;
+  }
+  .work-experience .work-content .work-info {
+    margin-left: 0px;
+  }
+  .project-info > p {
+    line-height: 1.7;
+  }
+  .academics .academics-content .academic-info {
+    text-align: center;
+  }
+  .content-wrapper {
+    margin: 0px auto;
+  }
+  .academics {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .academics h1 {
+    font-size: 26px;
+  }
+  .prof-skills {
+    padding: 60px 20px;
+    margin: 0 auto;
+  }
+  .work-experience, .projects {
+    padding: 60px 20px;
+  }
+  .work-experience .work-content {
+    text-align: center;
+  }
+  .projects {
+    text-align: center;
+  }
+  .academics-content > div:nth-child(1) > a:nth-child(1) {
+    margin: 0 auto;
+  }
+  .academics-content > div:nth-child(2) > a:nth-child(1) {
+    margin: 0 auto;
+  }
+  .prof-skills > div:nth-child(1) > h1:nth-child(1),
+  .work-experience > div:nth-child(1) > h1:nth-child(1),
+  .projects > div:nth-child(1) > h1:nth-child(1) {
+    font-size: 26px;
+    text-align: center;
+  }
+  .work-experience .work-content > div:nth-child(1) {
+    display: initial;
+  }
+  .work-content > div:nth-child(2) {
+    margin-top: 50px;
+  }
+}
+
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+  .side-bar, .right-side-wrapper, .academics, .work-experience, .prof-skills, .projects {
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
