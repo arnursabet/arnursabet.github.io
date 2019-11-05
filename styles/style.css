@@ -751,15 +751,18 @@ body {
   transition: transform 300ms ease-out, -webkit-transform 300ms ease-out;
 }
 
+.work-experience .work-content img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 .work-experience .work-content .work-info {
   margin-left: 30px;
 }
 
-.work-experience .work-content div:nth-child(1) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 50px;
+.work-experience .work-content > div {
+  margin-bottom: 30px;
 }
 
 .projects {
