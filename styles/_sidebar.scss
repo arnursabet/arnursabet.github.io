@@ -207,10 +207,10 @@
     line-height: 26px;
     overflow: hidden;
     white-space: nowrap;
-    animation: typing 1.5s steps(22) forwards;
-    -webkit-animation: typing 1.5s steps(22) forwards;
-    -moz-animation: typing 1.5s steps(22) forwards;
-    -o-animation: typing 1.5s steps(22) forwards;
+    animation: typing 1.5s steps(22, end) forwards;
+    -webkit-animation: typing 1.5s steps(22, end) forwards;
+    -moz-animation: typing 1.5s steps(22, end) forwards;
+    -o-animation: typing 1.5s steps(22, end) forwards;
     animation-delay: 1s;
     -webkit-animation-delay: 1s;
     -moz-animation-delay: 1s;
