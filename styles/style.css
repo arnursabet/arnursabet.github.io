@@ -991,6 +991,10 @@ body {
   .my-location {
     margin-top: 37px;
   }
+  .side-bar, .right-side-wrapper, .academics, .work-experience, .prof-skills, .projects {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
@@ -1243,27 +1247,6 @@ body {
 }
 
 /* Samsung Galaxy S3 ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
-  /* Styles */
-}
-
-/* Samsung Galaxy S4 ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-  /* Styles */
-}
-
-/* Samsung Galaxy S5 ----------- */
-@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-  /* Styles */
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
-  .side-bar, .right-side-wrapper, .academics, .work-experience, .prof-skills, .projects {
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-}
-
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
   html {
     -webkit-transform: rotate(-90deg);
