@@ -10,6 +10,7 @@
         <link rel="stylesheet" type="text/css" href="css-webfonts/css/brands.min.css">
         <link rel="stylesheet" type="text/css" href="css-webfonts/css/solid.min.css">
         <link rel="stylesheet" type="text/css" href="./styles/style.css">
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
         <!-- <script src="https://kit.fontawesome.com/d5cfc57899.js"></script> -->
         <title>Arnur Sabet</title>
     </head>
@@ -33,13 +34,22 @@
                     <em>Dark Mode</em>
                 </div>
             </div>
-
+            
             <div class="about-container">
                 <h1 class="my-name">
                     Arnur&nbsp;Sabet
                 </h1>
-                <p class="my-description">Computer Science Student</p>
-
+                <div style="margin-top: 20px;">
+                    <span class="my-description"> 
+                    </span>
+                </div>
+                <script>
+                    var typed = new Typed('.my-description', {
+                        strings: ["", "Hello!", "Salem!", "Привет!", "Bonjour!", "My name is Arnur.", "I study Computer Science and Data Science.", "I value efficiency and diligence in my professional and daily life.", "Welcome to my website!"],
+                        typeSpeed: 30,
+                        startDelay: 6500
+                    });
+                </script>
                 <p class="my-location">
                         <span class="location-icon"><i class="fas fa-map-marker-alt fa-2x"></i></span>Chicago,&nbsp;United&nbsp;States<br>
                         <span class="home-icon"><i class="fas fa-home fa-2x"></i></span>Almaty,&nbsp;Kazakhstan

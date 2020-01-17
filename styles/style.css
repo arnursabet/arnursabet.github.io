@@ -12,14 +12,14 @@
   height: 100%;
   padding: 75px 85px 50px;
   background-color: var(--sidebar-color);
-  animation: curtains 2.5s ease forwards;
-  -webkit-animation: curtains 2.5s ease forwards;
-  -moz-animation: curtains 2.5s ease forwards;
-  -o-animation: curtains 2.5s ease forwards;
-  animation-delay: 5s;
-  -webkit-animation-delay: 5s;
-  -moz-animation-delay: 5s;
-  -o-animation-delay: 5s;
+  animation: curtains 1.5s forwards;
+  -webkit-animation: curtains 1.5s forwards;
+  -moz-animation: curtains 1.5s forwards;
+  -o-animation: curtains 1.5s forwards;
+  animation-delay: 4s;
+  -webkit-animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  -o-animation-delay: 4s;
 }
 
 @media (min-width: 992px) {
@@ -206,51 +206,9 @@ input:checked + .slider:before {
 }
 
 .my-description {
-  display: block;
-  width: 0ch;
-  font-family: monospace;
+  font-family: "Source Code Pro", monospace;
   font-weight: 300;
   font-size: 16px;
-  line-height: 26px;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 1.5s steps(22, end) forwards;
-  -webkit-animation: typing 1.5s steps(22, end) forwards;
-  -moz-animation: typing 1.5s steps(22, end) forwards;
-  -o-animation: typing 1.5s steps(22, end) forwards;
-  animation-delay: 1s;
-  -webkit-animation-delay: 1s;
-  -moz-animation-delay: 1s;
-  -o-animation-delay: 1s;
-}
-
-@keyframes typing {
-  0% {
-    width: 0ch;
-    border-right: 2px var(--font-color) solid;
-  }
-  99% {
-    width: 21ch;
-    border-right: 2px var(--font-color) solid;
-  }
-  100% {
-    width: 21ch;
-    border-right: none;
-  }
-}
-
-@-webkit-keyframes typing {
-  0% {
-    width: 0ch;
-    border-right: 2px var(--font-color) solid;
-  }
-  99% {
-    width: 21ch;
-    border-right: 2px var(--font-color) solid;
-  }
-  100% {
-    width: 21ch;
-  }
 }
 
 .my-location {
@@ -265,10 +223,10 @@ input:checked + .slider:before {
   -webkit-animation: location 1s forwards;
   -moz-animation: location 1s forwards;
   -o-animation: location 1s forwards;
-  animation-delay: 2.5s;
-  -webkit-animation-delay: 2.5s;
-  -moz-animation-delay: 2.5s;
-  -o-animation-delay: 2.5s;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
 }
 
 @keyframes location {
@@ -292,30 +250,30 @@ input:checked + .slider:before {
 .location-icon {
   display: inline-block;
   color: #B52525;
-  margin-left: 4px;
+  margin-left: 7px;
   margin-right: 14px;
-  animation: fadeIn 2.5s forwards;
-  -webkit-animation: fadeIn 2.5s forwards;
-  -moz-animation: fadeIn 2.5s forwards;
-  -o-animation: fadeIn 2.5s forwards;
-  animation-delay: 2s;
-  -webkit-animation-delay: 2s;
-  -moz-animation-delay: 2s;
-  -o-animation-delay: 2s;
+  animation: fadeIn 1.5s forwards;
+  -webkit-animation: fadeIn 1.5s forwards;
+  -moz-animation: fadeIn 1.5s forwards;
+  -o-animation: fadeIn 1.5s forwards;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
 }
 
 .home-icon {
   display: inline-block;
   color: #2C935C;
   margin-right: 10px;
-  animation: fadeIn 2.5s forwards;
-  -webkit-animation: fadeIn 2.5s forwards;
-  -moz-animation: fadeIn 2.5s forwards;
-  -o-animation: fadeIn 2.5s forwards;
-  animation-delay: 2s;
-  -webkit-animation-delay: 2s;
-  -moz-animation-delay: 2s;
-  -o-animation-delay: 2s;
+  animation: fadeIn 1.5s forwards;
+  -webkit-animation: fadeIn 1.5s forwards;
+  -moz-animation: fadeIn 1.5s forwards;
+  -o-animation: fadeIn 1.5s forwards;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
 }
 
 .social {
@@ -327,10 +285,10 @@ input:checked + .slider:before {
   -webkit-animation: fadeIn 2s forwards;
   -moz-animation: fadeIn 2s forwards;
   -o-animation: fadeIn 2s forwards;
-  animation-delay: 3s;
-  -webkit-animation-delay: 3s;
-  -moz-animation-delay: 3s;
-  -o-animation-delay: 3s;
+  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
 }
 
 @keyframes fadeIn {
@@ -392,10 +350,10 @@ input:checked + .slider:before {
   -webkit-animation: slideIn 1s forwards linear, fadeIn 2.5s forwards;
   -moz-animation: slideIn 1s forwards linear, fadeIn 2.5s forwards;
   -o-animation: slideIn 1s forwards linear, fadeIn 2.5s forwards;
-  animation-delay: 4s;
-  -webkit-animation-delay: 4s;
-  -moz-animation-delay: 4s;
-  -o-animation-delay: 4s;
+  animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -o-animation-delay: 3s;
   transform: scale(0);
   -webkit-transform: scale(0);
   -o-transform: scale(0);
@@ -856,6 +814,7 @@ body {
     font-size: 30px;
   }
   .my-description {
+    max-width: 220px;
     margin-top: 35px;
   }
   .social {
@@ -968,6 +927,7 @@ body {
             align-items: center;
   }
   .my-description {
+    max-width: 220px;
     margin-top: 35px;
     font-size: 16px;
   }
@@ -986,14 +946,12 @@ body {
             align-items: center;
   }
   .my-description {
+    max-width: 220px;
     margin-top: 35px;
     font-size: 16px;
   }
   .my-name {
     font-size: 30px;
-  }
-  .my-description {
-    margin-top: 35px;
   }
   .social {
     margin-top: 0px;
@@ -1019,6 +977,7 @@ body {
             align-items: center;
   }
   .my-description {
+    max-width: 220px;
     margin-top: 35px;
     font-size: 16px;
   }
@@ -1037,6 +996,7 @@ body {
             align-items: center;
   }
   .my-description {
+    max-width: 220px;
     margin-top: 35px;
     font-size: 16px;
   }
@@ -1146,6 +1106,7 @@ body {
             align-items: center;
   }
   .my-description {
+    max-width: 220px;
     margin-top: 35px;
     font-size: 16px;
   }
@@ -1164,6 +1125,7 @@ body {
             align-items: center;
   }
   .my-description {
+    max-width: 220px;
     margin-top: 35px;
     font-size: 16px;
   }
