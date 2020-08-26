@@ -74,7 +74,7 @@ body {
         background-color: white;
         padding: 10px;
         border-radius: 10px;
-        box-shadow: #333 0px 5px 9px;
+        box-shadow: #000 0px 5px 9px;
         &:hover {
           transform: scale(1.1);
           cursor: pointer;
@@ -352,6 +352,12 @@ body {
     }
     .side-bar, .right-side-wrapper, .academics, .work-experience, .prof-skills, .projects {
       box-shadow: none;
+    }
+
+    .academics-content {
+      img {
+        margin: 0 auto;
+      }
     }
     .academics-content > div:nth-child(1) > a:nth-child(1) {
       margin: 0 auto;
