@@ -104,8 +104,8 @@
     -webkit-animation-delay: 4.5s;
     -moz-animation-delay: 4.5s;
     -o-animation-delay: 4.5s;
-    em {
-      margin-left: 10px;
+    span {
+      margin-right: 10px;
       font-size: 1rem;
     }
   }
@@ -211,7 +211,7 @@
     margin-top: 60px;
     font-family: 'Source Code Pro', monospace;
     font-weight: 500;
-    color: var(--sidebar-location-color);
+    color: var(--sidebar-location-color) !important;
     animation: location 1s forwards;
     -webkit-animation: location 1s forwards;
     -moz-animation: location 1s forwards;
@@ -220,6 +220,10 @@
     -webkit-animation-delay: 1s;
     -moz-animation-delay: 1s;
     -o-animation-delay: 1s;
+    a {
+      text-decoration: none;
+      color: #333;
+    }
   }
   
   @keyframes location {
@@ -354,15 +358,15 @@
   }
   
   
-  .facebook, .linked-in {
+  .github, .linked-in {
     margin-right: 15px;
     color: var(--font-color);
     border-radius: 50%;
     display: inline-block;
   }
   
-  .facebook:hover {
-    color: #3C5A99;
+  .github:hover {
+    color: #333333;
     transition: color 300ms ease-in;
     -moz-transition: color 300ms ease-in;
     -ms-transition: color 300ms ease-in;

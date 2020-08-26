@@ -93,8 +93,8 @@
   -o-animation-delay: 4.5s;
 }
 
-.theme-switch-wrapper em {
-  margin-left: 10px;
+.theme-switch-wrapper span {
+  margin-right: 10px;
   font-size: 1rem;
 }
 
@@ -218,7 +218,7 @@ input:checked + .slider:before {
   margin-top: 60px;
   font-family: 'Source Code Pro', monospace;
   font-weight: 500;
-  color: var(--sidebar-location-color);
+  color: var(--sidebar-location-color) !important;
   animation: location 1s forwards;
   -webkit-animation: location 1s forwards;
   -moz-animation: location 1s forwards;
@@ -227,6 +227,11 @@ input:checked + .slider:before {
   -webkit-animation-delay: 1s;
   -moz-animation-delay: 1s;
   -o-animation-delay: 1s;
+}
+
+.my-location a {
+  text-decoration: none;
+  color: #333;
 }
 
 @keyframes location {
@@ -309,15 +314,15 @@ input:checked + .slider:before {
   }
 }
 
-.facebook, .linked-in {
+.github, .linked-in {
   margin-right: 15px;
   color: var(--font-color);
   border-radius: 50%;
   display: inline-block;
 }
 
-.facebook:hover {
-  color: #3C5A99;
+.github:hover {
+  color: #333333;
   -webkit-transition: color 300ms ease-in;
   transition: color 300ms ease-in;
   -moz-transition: color 300ms ease-in;
@@ -490,26 +495,20 @@ input:checked + .slider:before {
 }
 
 :root {
-  --sidebar-color: #fff;
-  --sidebar-name-color: #4a4a4a;
+  --sidebar-color: #EAEAEA;
+  --sidebar-name-color: #4A4A4A;
   --sidebar-location-color: #707070;
-  --academics-color: linear-gradient(to left, #5B86E5, #36D1DC);
-  --skills-color: linear-gradient(to left, #7f00ff, #e100ff);
-  --work-color: linear-gradient(to right, #ffc500, #c21500);
-  --projects-color: linear-gradient(to right, #a8e063, #56ab2f);
-  --font-color: #333;
-  --contact-color: #F29E4C;
+  --theme-color: #EAEAEA;
+  --font-color: #333333;
+  --contact-color: #FA4616;
 }
 
 [data-theme="dark"] {
   --sidebar-color: #002042;
-  --sidebar-name-color: #fff;
-  --sidebar-location-color: #fff;
-  --academics-color: #12355b;
-  --skills-color: #14293f;
-  --work-color: #345272;
-  --projects-color: #0a131c;
-  --font-color: #fff;
+  --sidebar-name-color: #ffffff;
+  --sidebar-location-color: #ffffff;
+  --theme-color: #002042;
+  --font-color: #ffffff;
   --contact-color: #16DB93;
 }
 
@@ -535,7 +534,8 @@ body {
 
 .info-list {
   list-style: none;
-  line-height: 1.6;
+  line-height: 1.5;
+  margin-top: 10px;
   padding-left: 0px;
 }
 
@@ -543,11 +543,10 @@ body {
   width: 100%;
   height: auto;
   padding: 65px;
-  background: #36D1DC;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #5B86E5, #36D1DC);
+  background: #EAEAEA;
   /* Chrome 10-25, Safari 5.1-6 */
-  background: var(--academics-color);
+  background: var(--theme-color);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -560,7 +559,7 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
   vertical-align: middle;
-  color: #fff;
+  color: var(--font-color);
 }
 
 .academics h1 {
@@ -608,15 +607,18 @@ body {
   margin-left: 30px;
 }
 
+.academics .academics-content .academic-info h2 {
+  margin-bottom: 0px;
+}
+
 .prof-skills {
   width: 100%;
   height: auto;
   padding: 65px;
-  background: #7f00ff;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #7f00ff, #e100ff);
+  background: #EAEAEA;
   /* Chrome 10-25, Safari 5.1-6 */
-  background: var(--skills-color);
+  background: var(--theme-color);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -629,7 +631,7 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
   vertical-align: middle;
-  color: #fff;
+  color: var(--font-color);
 }
 
 .prof-skills .skills-content {
@@ -667,11 +669,10 @@ body {
   width: 100%;
   height: auto;
   padding: 65px;
-  background: #c21500;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ffc500, #c21500);
+  background: #EAEAEA;
   /* Chrome 10-25, Safari 5.1-6 */
-  background: var(--work-color);
+  background: var(--theme-color);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -719,6 +720,10 @@ body {
   margin-left: 30px;
 }
 
+.work-experience .work-content .work-info h2 {
+  margin-bottom: 0px;
+}
+
 .work-experience .work-content > div {
   margin-bottom: 30px;
 }
@@ -731,7 +736,7 @@ body {
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: var(--projects-color);
+  background: var(--theme-color);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1218,7 +1223,6 @@ body {
   }
 }
 
-/* Samsung Galaxy S3 ----------- */
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
   html {
     -webkit-transform: rotate(-90deg);
