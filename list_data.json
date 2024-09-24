@@ -1,0 +1,22 @@
+{
+	"jobs": [
+		{
+			"Company": "PwC",
+			"Title": "Experienced Associate, Technology Consulting",
+			"Location": "Almaty, Kazakhstan",
+			"Dates": "2023-2024"
+		},
+		{
+			"Company": "Tempest Labs",
+			"Title": "Software Engineer",
+			"Location": "Jacksonville, FL",
+			"Dates": "2022-2023"
+		},
+		{
+			"Company": "University of Florida",
+			"Title": "Instructional Support Assistant",
+			"Location": "Gainesville, FL",
+			"Dates": "2021-2022"
+		}
+	]
+}

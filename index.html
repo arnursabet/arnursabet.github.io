@@ -1,339 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
-        <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-        <link rel="stylesheet" type="text/css" href="css-webfonts/css/fontawesome.min.css">
-        <link rel="stylesheet" type="text/css" href="css-webfonts/css/brands.min.css">
-        <link rel="stylesheet" type="text/css" href="css-webfonts/css/solid.min.css">
-        <link rel="stylesheet" type="text/css" href="./styles/style.css">
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-        <!-- <script src="https://kit.fontawesome.com/d5cfc57899.js"></script> -->
+<!DOCTYPE HTML>  
+<html>  
+    <header>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="table_style.css">
         <title>Arnur Sabet</title>
-    </head>
-
-    <body>
-            <script>
-                    document.body.classList.add('js-loading');
-                    window.addEventListener("load", showPage);
-                    function showPage() {
-                        document.body.classList.remove('js-loading');
-                    }
-                </script>
-        <div class="side-bar">
-            <div class="top-menu">
-                <!-- <a href="" target="_blank" class="resume-btn l-button">resume</a> -->
-                <div class="theme-switch-wrapper">
-                    <span>Dark Mode</span>
-                    <label class="theme-switch" for="checkbox">
-                        <input type="checkbox" id="checkbox" />
-                        <div class="slider round"></div>
-                    </label>
-                </div>
+    </header>
+    <body>  
+        <!---Navigation--->
+        <!--This section of code defines the navigation bar at the top of the page.  The classes used here are defined in the style.css file.-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <!--This code defines the "My Webpage" link in the top left corner of the navigation pane-->
+                <a class="navbar-brand" href="./index.html">Arnur Sabet</a>
+                <!--This code defines the "List" link in the top right corner of the navigation pane-->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="./list.html">List</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--This section defines the middle section of the webpage-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
                 
-            </div>
-            
-            <div class="about-container">
-                <h1 class="my-name">
-                    Arnur&nbsp;Sabet
-                </h1>
-                <p style="margin-top: 20px;">
-                    <span class="my-description"> 
-                    </span>
-                </p>
-                <script>
-                    var typed = new Typed('.my-description', {
-                        strings: ["", "Hey there!", "Thanks for stopping by!", "My name is Arnur.", "I am a graduate student at UC Berkeley.", "I love programming 💻, tennis 🎾, and music 🎶."],
-                        typeSpeed: 30,
-                        startDelay: 6500
-                    });
-                </script>
-                <p class="my-location">
-                        <span class="location-icon"><i class="fas fa-map-marker-alt fa-2x"></i></span><a href="https://en.wikipedia.org/wiki/Gainesville,_Florida" target="_blanc">Berkeley,&nbsp;CA</a><br>
-                        <span class="home-icon"><i class="fas fa-home fa-2x"></i></span><a href="https://en.wikipedia.org/wiki/Almaty" target="_blanc">Almaty,&nbsp;Kazakhstan</a>
-                </p>
-                <div class="social">
-                    <a href="https://www.github.com/arnursabet/" class="github"><i class="fab fa-github fa-3x"></i></a>
-                    <a href="https://www.linkedin.com/in/arnursabet/" class="linked-in"><i class="fab fa-linkedin fa-3x"></i></a>
+                <!-- This code is for the student name-->
+                <h1 class="masthead-heading text-uppercase mb-0">Arnur Sabet</h1>
+                <!--This code creates the two lines separating the student name from the subtitle-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-line"></div>
                 </div>
-                <a href="mailto:arnursabet@gmail.com" class="contact-btn">Say Hi</a>
+                <!--This code creates the subheading underneath the line dividers-->
+                <p class="masthead-subheading font-weight-light mb-0">UC Berkeley, MIMS 2026</p>
             </div>
-        </div>
+        </header>
+        <section class="text-center">
 
-        <div class="right-side-wrapper">
-            <div class="academics">
-                <div class="content-wrapper">
-                    <h1><i class="fas fa-university fa-lg"></i>&nbsp;Education</h1>
-                    
-                    <div class="academics-content">
-                        <div style="display:flex;margin-bottom:35px;">
-                            <a href="http://www.ufl.edu/" target="_blank"><img src="static/img/cal.png" width="100px" height="100px" style="padding:5px;" alt=""></a>
-                                <div class="academic-info">
-                                    <h2>University&nbsp;of&nbsp;California,&nbsp;Berkeley</h2>
-                                    <ul class="info-list">
-                                        <li>&nbsp;<i class="fas fa-map-pin"></i>&nbsp;&nbsp;<em>Berkeley, CA, United States</em></li>
-                                        <li><i class="fas fa-book"></i>&nbsp;&nbsp;Master's, Information Management and Systems</li>
-                                        <li><i class="fas fa-clock"></i>&nbsp;&nbsp;Class of May 2026</li>
-                                    </ul>  
-                                </div>
-                        </div>
-                        <div style="display:flex;margin-bottom:35px;">
-                                <a href="http://www.ufl.edu/" target="_blank"><img src="static/img/uf-logo.png" width="100px" height="100px" style="padding:0px;" alt=""></a>
-                                    <div class="academic-info">
-                                        <h2>University&nbsp;of&nbsp;Florida</h2>
-                                        <ul class="info-list">
-                                            <li>&nbsp;<i class="fas fa-map-pin"></i>&nbsp;&nbsp;<em>Gainesville, FL, United States</em></li>
-                                            <li><i class="fas fa-book"></i>&nbsp;&nbsp;BA, Statistics, minor: Computer Science</li>
-                                            <li><i class="fas fa-clock"></i>&nbsp;Class of May 2022</li>
-                                        </ul>  
-                                    </div>
-                            </div>
-                        <!-- <div style="display:flex;margin-bottom:35px;">
-                            <a href="http://www.lakeforest.edu/" target="_blank"><img src="static/img/lfc-logo.png" width="100px" height="106px" alt=""></a>
-                                <div class="academic-info">
-                                    <h2>Lake&nbsp;Forest&nbsp;College</h2>
-                                    <ul class="info-list">
-                                        <li>&nbsp;<i class="fas fa-map-pin"></i>&nbsp;&nbsp;<em>Lake Forest, IL, United States</em></li>
-                                        <li><i class="fas fa-book"></i>&nbsp;&nbsp;Bachelor of Arts in Computer Science (Transferred)</li>
-                                        <li><i class="fas fa-clock"></i>&nbsp;&nbsp;August 2018 - May 2020</li>
-                                    </ul>  
-                                 </div>
-                        </div> -->
-                        
-                        <div style="display:flex;">
-                            <a href="https://uwcdilijan.org/" target="_blank"><img src="static/img/uwc-logo.png" width="100px" height="100px" alt=""></a>
-                            <div class="academic-info">
-                                <h2>United&nbsp;World&nbsp;Colleges</h2>
-                                <ul class="info-list">
-                                    <li>&nbsp;<i class="fas fa-map-pin"></i>&nbsp;&nbsp;<em>Dilijan, Armenia</em></li>
-                                    <li><i class="fas fa-book"></i>&nbsp;&nbsp;International Baccalaureate (IB Diploma)</li>
-                                    <li><i class="fas fa-clock"></i>&nbsp;&nbsp;September 2016 - May 2018</li>
-                                </ul>   
-                            </div>
-                        </div>
-                    </div>
-                        
-                </div>     
+            <div class="m-auto col-md-6 col-lg-4 mb-5">
+                <!-- put your bio paragraph here; remember to use the correct html tags -->
+                 <h2>Bio</h2>
+                <p class="">
+                    Hello! Welcome to my temporary webpage, which will be updated with exciting content soon. I’m currently pursuing a master’s in Information Management and Systems at UC Berkeley. I’m passionate about exploring new technologies and tackling challenging problems. Right now, I’m diving into the field of climate informatics, looking for innovative ways to apply my knowledge and technical skills in this vital area.
+                    Stay tuned for more updates!               
+                 </p>
             </div>
-
-            <div class="prof-skills">
-                    <div class="content-wrapper">
-                        <h1><i class="fas fa-toolbox fa-lg"></i>&nbsp;Skills and Coursework Knowledge</h1>
-                        <div class="skills-content">
-                            <div class="development">
-                                <h3>Technical</h3>
-                                <ul>
-                                    <li><strong>Programming languages:</strong> Python, TypeScript, Swift, Rust, Java, C++, R, SQL, HTML/CSS</li>
-                                    <li><strong>Web Development:</strong> React, Node, Express, Flask, Django</li>
-                                    <li><strong>Data Science:</strong> numpy, pandas, scikit-learn, torch, tensorflow, matplotlib, PowerBI</li>
-                                    <li><strong>Cloud:</strong> Microsoft Azure</li>
-                                    <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB, CosmosDB, ChromaDB</li>
-                                </ul>
-                            </div>
-                            <!-- <div class="design">
-                                <h3>Soft</h3>
-                                <ul>
-                                    <li>Teamwork</li>
-                                    <li>Leadership</li>
-                                    <li>Problem solving</li>
-                                    <li>Communication</li>
-                                    <li>Critical thinking</li>
-                                </ul>
-                            </div> -->
-
-                            <div class="design">
-                                <h3>Bachelor Coursework</h3>
-                                <ul>
-                                    <li><strong>Statistics:</strong> Mathematical Probability, Mathematical Statistics, Regression Analysis, Design of Experiments, Categorical Data Analysis, Statistical Learning, Statistical Computing </li>
-                                    <li><strong>Mathematics:</strong> Multivariable Calculus, Discrete Mathematics, Linear Algebra, Linear Algebra for Data Science, Numerical Analysis, Advanced Calculus 1 </li>
-                                    <li><strong>Computer Science:</strong> Programming Fundamentals 1 & 2, Data Structures and Algorithms, Database Systems, Operating Systems, Web Programming, Programming for Data Applications</li>
-                                </ul>
-                            </div>
-
-                            <div class="design">
-                                <h3>Languages</h3>
-                                <ul>
-                                    <li>🇬🇧&nbsp;English - Fluent</li>
-                                    <li>🇷🇺&nbsp;Russian - Native / Bilingual</li>
-                                    <li>🇰🇿&nbsp;Kazakh - Native / Bilingual</li>
-                                    <li>🇫🇷&nbsp;French - Conversational</li>
-                                </ul>
-                            </div>
-                        </div>       
-                    </div>
-            </div>
-
-            <div class="work-experience">
-                    <div class="content-wrapper">
-                        <h1><i class="fas fa-briefcase fa-lg"></i>&nbsp;Experience</h1>
-                        <div class="work-content">
-                            <div style="display:flex;">
-                                <img src="static/img/pwc.png" style="padding: 20px 10px;background-color:white;border-radius:10px;box-shadow:#333 0px 5px 9px;" width="100px" alt="">
-                                <div class="work-info">
-                                    <h2>Experienced Associate, Data & Analytics, Technology Consulting</h2>
-                                    <ul class="info-list" style="margin-top: 10px;">
-                                        <li><i class="fas fa-suitcase"></i>&nbsp;&nbsp;PwC</li>
-                                        <li><i class="fas fa-clock"></i>&nbsp;&nbsp;March 2023 - August 2024</li>
-                                        <li><i class="fas fa-book"></i>&nbsp;&nbsp;Python, MERN, Microsoft Azure, GCP, Consulting</small></li>
-                                    </ul>
-                                    
-                                </div>
-                            </div>
-                            <div style="display:flex;">
-                                <img src="static/img/tempest.png" style="padding: 15px 5px; background-color:white;border-radius:10px;box-shadow:#333 0px 5px 9px;" width="100px" alt="">
-                                <div class="work-info">
-                                    <h2>Software Engineer</h2>
-                                    <ul class="info-list" style="margin-top: 10px;">
-                                        <li><i class="fas fa-suitcase"></i>&nbsp;&nbsp;Tempest Labs Inc.</li>
-                                        <li><i class="fas fa-clock"></i>&nbsp;&nbsp;July 2022 - January 2023</li>
-                                        <li><i class="fas fa-book"></i>&nbsp;&nbsp;Rust, Python, DeFi, EVM, SMT Solvers, AI</small></li>
-                                    </ul>
-                                    
-                                </div>
-                            </div>
-                            <div style="display:flex;">
-                                <img src="static/img/uf-logo.png" style="background-color:white;border-radius:10px;box-shadow:#333 0px 5px 9px;" width="100px" height="106px" alt="">
-                                <div class="work-info">
-                                    <h2>Instructional Support Assistant</h2>
-                                    <ul class="info-list" style="margin-top: 10px;">
-                                        <li><i class="fas fa-suitcase"></i>&nbsp;&nbsp;UFIT Center for Instructional Technology and Training</li>
-                                        <li><i class="fas fa-clock"></i>&nbsp;&nbsp;January 2021 - May 2022</li>
-                                        <li><i class="fas fa-book"></i>&nbsp;&nbsp;Canvas, Accessibility, Instructional Design</small></li>
-                                    </ul>
-                                    
-                                </div>
-                            </div>
-                            <div style="display:flex;">
-                                    <img src="static/img/lfc-logo.png" style="background-color:white;padding:10px;border-radius:10px;box-shadow:#333 0px 5px 9px;" width="100px" height="106px" alt="">
-                                    <div class="work-info">
-                                        <h2>Machine Learning Researcher</h2>
-                                        <ul class="info-list" style="margin-top: 10px;">
-                                            <li><i class="fas fa-suitcase"></i>&nbsp;&nbsp;Data Science Department</li>
-                                            <li><i class="fas fa-clock"></i>&nbsp;&nbsp;May 2020 - August 2020</li>
-                                            <li><i class="fas fa-book"></i>&nbsp;&nbsp;Machine Learning, Deep Learning, Computer Vision, Face Recognition, CNN, Transfer Learning</small></li>
-                                        </ul>
-                                        
-                                    </div>
-                                </div>
-                            <div style="display:flex;">
-                                <img src="static/img/lfc-logo.png" style="background-color:white;padding:10px;border-radius:10px;box-shadow:#333 0px 5px 9px;" width="100px" height="106px" alt="">
-                                <div class="work-info">
-                                    <h2>Teaching Assistant</h2>
-                                    <ul class="info-list"">
-                                        <li><i class="fas fa-suitcase"></i>&nbsp;&nbsp;Mathematics and Computer Science Department</li>
-                                        <li><i class="fas fa-clock"></i>&nbsp;&nbsp;September 2019 - May 2020</li>
-                                        <li><i class="fas fa-book"></i>&nbsp;&nbsp;Probability and Statistics, Computer Science I, Computer Science II, Web Programming</li>
-                                    </ul>
-                                    
-                                </div>
-                            </div>
-                            <div style="display:flex;">
-                                <img src="static/img/lfc-logo.png" style="background-color:white;padding:10px;border-radius:10px;box-shadow:#333 0px 5px 9px;" width="100px" height="106px" alt="">
-                                <div class="work-info">
-                                    <h2>IT Help Desk Assistant</h2>
-                                    <ul class="info-list">
-                                        <li><i class="fas fa-suitcase"></i>&nbsp;&nbsp;Information Technology Department</li>
-                                        <li><i class="fas fa-clock"></i>&nbsp;&nbspJanuary 2019 - May 2020</li>
-                                        <li><i class="fas fa-toolbox"></i>&nbsp;&nbspIT Help Desk, Computer Systems, Hardware, Software</li>
-                                    </ul>
-                                    
-                                </div>
-                            </div>
-                            <div style="display:flex;">
-                                <a href="#" target="_blank"><img src="static/img/cb.jpeg" style="border-radius: 10px;box-shadow:#333 0px 5px 9px;" width="100px" height="100px" alt=""></a>
-                                <div class="work-info">
-                                    <h2>Web Development Intern</h2>
-                                    <ul class="info-list">
-                                        <li><i class="fas fa-suitcase"></i>&nbsp;&nbsp;Codebusters</li>
-                                        <li><i class="fas fa-clock"></i>&nbsp;&nbsp;June 2019 - August 2019</li>
-                                        <li><i class="fas fa-toolbox"></i>&nbsp;&nbsp;Python, JavaScript, Data Analysis, Web Development</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>      
-                    </div>     
-            </div>
-
-            <div class="projects">
-                    <div class="content-wrapper">
-                        <h1><i class="fas fa-laptop-code fa-lg"></i>&nbsp;Projects&nbsp;and&nbsp;Labs</h1>
-                        <div class="projects-content">
-                            <img src="static/img/mywebsite.png" style="background-color:white;border-radius:10px;box-shadow:#333 0px 5px 9px;" width="100px" height="100px" alt="">
-                            <div class="project-info">
-                                <h2>This Website...</h2>
-                                    <p>A simple hard-coded website in HTML, CSS, and a pinch of JavaScript.</p>
-                            </div>
-                            <img src="static/img/R.png" style="background-color:white;padding:10px;border-radius:10px;box-shadow:#333 0px 5px 9px;" width="100px" height="100px" alt="">
-                            <div class="project-info">
-                                <h2>gatorCV R package</h2>
-                                    <p>R package for model selection and assessment via repeated stratified nested cross-validation for model assessment and selection, and repeated grid-search cross-validation for hyperparameter tuning and variable selection.</p>
-                            </div>
-                            <img src="static/img/R.png" style="background-color:white;padding:10px;border-radius:10px;box-shadow:#333 0px 5px 9px;" width="100px" height="100px" alt="">
-                            <div class="project-info">
-                                <h2>Regression Analysis and Prediction on Fish Market Data</h2>
-                                    <p>Regression Analysis and modeling to predict the weight of a fish from its physical characteristics.</p>
-                            </div>
-                            <a href="https://github.com/amac-lfc/facialdetection"><img src="static/img/covid-logo.png" style="background-color:white;padding:10px;border-radius:10px;box-shadow:#333 0px 5px 9px;" width="100px" height="100px" alt=""></a>
-                            <div class="project-info">
-                                <h2>COVID-19 Face Mask Detection</h2>
-                                    <p>A program that uses frsystem Python package and a trained face mask detector model to detect face masks or identities in real time.</p>
-                            </div>
-                            <a href="https://pypi.org/project/frsystem/"><img src="static/img/tf-logo.png" style="background-color:white;padding:10px;border-radius:10px;box-shadow:#333 0px 5px 9px;" width="100px" height="100px" alt=""></a>
-                            <div class="project-info">
-                                <h2>frsystem - Face Recognition System</h2>
-                                    <p>A Python package for experimenting with face recognition using Tensorflow/Keras, OpenCV and Sklearn.</p>
-                            </div>
-                            <a href="http://orbis-kz.com"><img src="static/img/orbis.png" style="background-color:white;padding:10px;border-radius:10px;box-shadow:#333 0px 5px 9px;" width="100px" height="100px" alt=""></a>
-                            <div class="project-info">
-                                <h2>Orbis&nbsp;Website</h2>
-                                    <p>Central Asian major holding company's website, created in a team of
-                                        professional developers using Django. The website can switch between two
-                                        languages; has an admin portal, geomaps API, and responsive design.
-                                    </p>
-                            </div>
-
-                            <img src="static/img/php_mysql.png" style="background-color:white;padding:10px;border-radius:10px;box-shadow:#333 0px 5px 9px;" width="100px" height="100px" alt="">
-                            <div class="project-info">
-                                <h2>Library Management System</h2>
-                                <p>A web-application for managing library inventory.
-                                </p>
-                            </div>
-
-                            <img src="static/img/hhhTab.png" style="background-color:white;padding:10px;border-radius:10px;box-shadow:#333 0px 5px 9px;" width="100px" height="100px" alt="">
-                            <div class="project-info">
-                                <h2>HIP&nbsp;HOP&nbsp;HUB Website</h2>
-                                <p>A web-space where you can learn about Hip-Hop Music. 
-                                    MUSC 237 course website at Lake Forest College.
-                                </p>
-                            </div>
-                            <br>
-                            <img src="static/img/wheel-logo.png" style="border-radius: 10px;box-shadow:#333 0px 5px 9px;" width="100px" height="100px" alt=""></a>
-                            <div class="project-info">
-                                <h2>Wheelscraper</h2>
-                                <p>A web-scraper written in Python that collects data from a popular 
-                                        car selling platform.
-                                </p>
-                            </div>
-                            <!-- <img src="static/img/react.png" style="background-color:white;padding:10px;border-radius:10px;box-shadow:#333 0px 5px 9px;" width="100px" height="100px" alt="">
-                            <div class="project-info">
-                                <h2>To-Do&nbsp;List</h2>
-                                <p>A basic to-do list app written using React.js.
-                                    The primary purpose of the app is to practice the "CRUD" principle.
-                                </p>
-                            </div>  -->
-                        </div>      
-                    </div>     
-            </div>
-
-            <div id="footer">
-                <div class="footer-content">
-                    &copy;2024. Arnur Sabet
-                </div>
-            </div>
-        </div>
-    <script src="static/js/themeSwitch.js"></script>
+        </section>
     </body>
+
 </html>
